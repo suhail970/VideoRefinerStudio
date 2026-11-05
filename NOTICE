@@ -1,0 +1,37 @@
+VideoRefiner Studio
+Copyright 2026 VideoRefiner Studio contributors
+
+This application is a desktop front end for Jasna, an open-source video
+restoration tool by Kruk2 and contributors.
+
+VideoRefiner Studio is distributed under the GNU Affero General Public
+License version 3.0 (AGPL-3.0-only), the same license as the Jasna application
+source it incorporates. The complete license text is in LICENSE.
+
+Jasna
+Copyright 2026 Kruk2 and contributors
+Source: https://github.com/Kruk2/jasna
+License: AGPL-3.0-only
+
+Jasna incorporates work from Lada, OpenMMLab MMagic, Lightricks LTX-2.5,
+Roboflow RF-DETR, Comfy Org comfy-kitchen, SageAttention, PyAV, VALI, FFmpeg,
+VideoLAN, Python, and other projects. Their notices are retained in
+vendor/jasna/NOTICE, vendor/jasna/LICENSING.md,
+vendor/jasna/assets/THIRD_PARTY_LICENSES.md and
+vendor/jasna/assets/THIRD_PARTY_MODELS.md.
+
+Model terms
+-----------
+- lada_mosaic_restoration_model_generic_v1.2.pth: AGPL-3.0, ladaapp and
+  contributors. Redistributed unmodified from
+  https://huggingface.co/ladaapp/lada
+- lada_mosaic_detection_model_v4_fast.pt: AGPL-3.0, ladaapp and contributors.
+  Redistributed unmodified from
+  https://huggingface.co/ladaapp/lada
+- rfdetr-v6-large.onnx (optional): Apache-2.0, RF-DETR architecture by Roboflow,
+  checkpoint trained by Kruk2 for Jasna. Downloaded from the Jasna release assets.
+- Supporters-only models (LTX, UNet 4x, SD 1.5) are not used by this app.
+
+Bundled dependencies keep their own licenses. This app does not redistribute
+them; they are installed from the Python package index into a local virtual
+environment. See THIRD_PARTY_NOTICES.md.
